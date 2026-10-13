@@ -1,0 +1,1 @@
+</main><footer class="footer"><div class="container">CampusConnect · College Event Registration Portal · PHP &amp; MySQL learning project</div></footer><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><script src="<?=str_contains($_SERVER['SCRIPT_NAME'] ?? '', '/admin/') ? '../' : ''?>assets/app.js"></script></body></html>
