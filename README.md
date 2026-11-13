@@ -28,10 +28,22 @@ PHP 8+, MySQL/MariaDB, PDO, HTML, CSS, Bootstrap 5, JavaScript, Apache/XAMPP.
 
 ## Create the First Administrator (Local Only)
 
-1. Open `http://localhost/college-event-registration-portal/admin/create-admin.php` if the one-time administrator creation utility is present.
-2. Create an administrator account with a strong password of at least 12 characters.
-3. Sign in and open **Admin → Create Event** to publish an event.
-4. Immediately delete `admin/create-admin.php` after creating the administrator. This utility must not remain accessible on a public deployment.
+The schema does not create a default administrator account.
+
+1. Register a normal account through the application's **Create an account** page.
+2. Open phpMyAdmin, select the `college_events` database, and open the SQL tab.
+3. Run the following statement, replacing the email with the address you registered:
+
+```sql
+UPDATE users
+SET role = 'admin'
+WHERE email = 'your-email@example.com';
+```
+
+4. Sign out and sign back in so the application loads the updated role.
+5. Open **Admin → Create Event**.
+
+Only promote an account you control. Do not expose phpMyAdmin or use this local setup process on a public server.
 
 ## Suggested Test Plan
 
