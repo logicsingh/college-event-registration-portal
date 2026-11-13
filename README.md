@@ -16,7 +16,7 @@ A PHP and MySQL web application for publishing college events and managing stude
 
 ## Stack
 
-PHP 8+, MySQL/MariaDB, PDO, HTML, CSS, Bootstrap 5, JavaScript, Apache/XAMPP.
+PHP 8.1+, MySQL/MariaDB, PDO, HTML, CSS, Bootstrap 5, JavaScript, Apache/XAMPP.
 
 ## Local Setup (Windows/XAMPP)
 
@@ -74,7 +74,7 @@ Only promote an account you control. Do not expose phpMyAdmin or use this local 
 
 ## Limitations
 
-This is a learning project and is not production-ready. Before real deployment, add automated tests, rate limiting, email verification, password reset, hardened session and cookie settings, a security review, and backups. Never deploy with default credentials.
+This is a learning project and is not production-ready. Before real deployment, add automated integration tests, rate limiting, email verification, password reset, proxy-aware HTTPS cookie configuration where applicable, a security review, and backups. Never deploy with default credentials.
 
 ## Future Improvements
 
